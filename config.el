@@ -101,6 +101,10 @@
 ;; Add homebrew to path to allow managed executables (ie. pyright) to be discoverable.
 (add-to-list 'exec-path "/opt/homebrew/bin/")
 
+;; Disable rainbow parens
+;; https://discourse.doomemacs.org/t/tip-heres-how-to-replace-rainbow-delimiters/3307
+(fset 'rainbow-delimiters-mode #'ignore)
+
 ;; TODO: Customize this for personal use
 (use-package! obsidian
   :config
