@@ -105,3 +105,6 @@
 (add-hook 'rust-mode-hook
           (lambda ()
             (add-hook 'before-save-hook 'rust-format-buffer nil 'make-it-local)))
+
+(after! svelte-mode
+  :config (add-to-list 'auto-mode-alist '("\\.svelte\\'" . svelte-mode)))

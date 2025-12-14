@@ -49,3 +49,4 @@
 ;; (unpin! t)
 (package! wgsl-mode)
 (package! typst-ts-mode)
+(package! svelte-mode)
