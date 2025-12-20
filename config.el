@@ -34,7 +34,8 @@
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function.
 (setq doom-theme 'doom-homage-white)
-(setq doom-font (font-spec :family "Monaspace Neon" :size 13))
+;; (setq doom-font (font-spec :family "Monaspace Neon" :size 13))
+(setq doom-font (font-spec :family "Jetbrains Mono" :size 13))
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
