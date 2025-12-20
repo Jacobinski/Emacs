@@ -80,7 +80,6 @@
 ;; Quality of life improvements
 (setq ns-use-proxy-icon nil) ;; Remove icons from the MacOS emacs title bar
 (setq mac-command-modifier 'meta) ;; Switch to using CMD as the Meta key
-(set-frame-size nil 200 58) ;; Make emacs start at a comfortable size
 (defun frame-center ()
   "Center the current frame on screen."
   (interactive)
@@ -109,3 +108,7 @@
 
 (after! svelte-mode
   :config (add-to-list 'auto-mode-alist '("\\.svelte\\'" . svelte-mode)))
+
+;; Add custom modules
+(add-to-list 'load-path (expand-file-name "modules" doom-user-dir) )
+(require 'init-startup)
